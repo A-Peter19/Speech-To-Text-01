@@ -104,3 +104,11 @@ body {
 #clearHistoryButton:hover {
     background-color: #c82333;
 }
+
+#copyButton {
+    background-color: #17a2b8; /* Blue color */
+}
+
+#copyButton:hover {
+    background-color: #138496;
+}
