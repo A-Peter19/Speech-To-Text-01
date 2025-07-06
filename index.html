@@ -10,9 +10,20 @@
     <div class="container">
         <h1>Live Speech to Text</h1>
         <p>Click the button and start speaking.</p>
-        <button id="startButton">Start Transcription</button>
+
+        <div class="buttons-container">
+            <button id="startButton">Start Transcription</button>
+            <button id="saveButton" class="hide">Save Transcription</button>
+        </div>
+
         <div id="transcription-container" class="hide">
             <p id="transcription-output"></p>
+        </div>
+
+        <div id="history-container" class="hide">
+            <h2>Transcription History</h2>
+            <ul id="history-list"></ul>
+            <button id="clearHistoryButton">Clear History</button>
         </div>
     </div>
     <script src="assets/js/script.js"></script>
