@@ -43,3 +43,64 @@ body {
 .hide {
     display: none;
 }
+
+/* Add these new styles to your existing CSS file */
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#saveButton {
+    background-color: #28a745; /* Green color */
+}
+
+#saveButton:hover {
+    background-color: #218838;
+}
+
+#history-container {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+#history-list li {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+
+#history-list li:last-child {
+    border-bottom: none;
+}
+
+#clearHistoryButton {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    display: block; /* Make it a block to center it easily if needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#clearHistoryButton:hover {
+    background-color: #c82333;
+}
