@@ -30,18 +30,13 @@ if (!window.SpeechRecognition) {
         const history = JSON.parse(localStorage.getItem('transcriptionHistory')) || [];
         if (history.length > 0) {
             historyList.innerHTML = ''; // Clear existing list
-            history.slie().reverse().forEach(entry => {
+            history.slice().reverse().forEach(entry => {
                 const li = document.createElement('li');
                 li.innerHTML = `
-                ${entry.text}
-                <br>
-                <small style="color: #6c757d;">${entry.date}</small>
+                    ${entry.text}
+                    <br>
+                    <small style="color: #6c757d;">${entry.date}</small>
                 `;
-                historyList.appendChild(li);
-            });
-            history.forEach(text => {
-                const li = document.createElement('li');
-                li.textContent = text;
                 historyList.appendChild(li);
             });
             historyContainer.classList.remove('hide');
